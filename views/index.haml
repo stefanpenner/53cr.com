@@ -1,0 +1,39 @@
+#header_wrapper
+  #header_main
+    .container
+      %a{ :href => '/'}
+        %img{:src => '/images/chromium.png'}
+      %ul
+        %li{ :class => 'first' } 
+          %a{ :href => '#' } Home
+        %li
+          %a{ :href => '#' } Our Work
+        %li 
+          %a{ :href => '#' } Labs
+        %li 
+          %a{ :href => '#' } Blog
+        %li{ :class => 'last' }
+          %a{ :href => '#' } Contact
+  .container
+    #sub_header
+      #blurb
+        %h2 Slogan
+        %p something about something lalalala
+        %a{ :href => '#' }
+          %img{ :src => '/images/contact.png'}
+      #preview
+        Preview
+#content_wrapper
+  .container#content
+    .category
+      %img{ :src => '/images/paint.png'}
+      %h3 Design
+      %p We hand-code layouts that are clear, light, interactive, accessible, standards-compliant, and compatible with every major browser
+    .category
+      %img{ :src => '/images/hat.png'}
+      %h3 Development
+      %p We build highly interactive AJAX enabled, database-driving, web applications.
+    .category
+      %img{ :src => '/images/light.png'}
+      %h3 Discussion
+      %p We also offer consulting service, let us know what you're looking for and we'll fill in the blanks.
