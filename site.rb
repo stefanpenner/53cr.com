@@ -2,10 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'compass'
-
  
-set :public, File.dirname(__FILE__) + '/public' 
-
 get '/' do
   haml :index
 end
