@@ -45,6 +45,7 @@ h1, h2, h3, h4, h5, h6 { font-size: 1.5em; }
 
 html { color: white; background: url(../images/gray.png); }
 
+body { font-family: helvetica, arial, sans; }
 
 .container { margin: 0 auto; min-width: 600px; max-width: 1000px; padding-left: 20px; padding: -right 20px; }
 
@@ -57,16 +58,15 @@ html { color: white; background: url(../images/gray.png); }
 #header_main ul li { list-style-type: none; margin-left: 0px; white-space: nowrap; float: left; padding-left: 1em; padding-right: 1em; }
 #header_main ul li.first { padding-left: 0px; }
 #header_main ul li.last { padding-right: 0px; }
-#header_main ul li { padding-top: 12px; }
-#header_main ul li a { color: inherit; text-decoration: inherit; cursor: inherit; font-size: 20px; color: #686c72; }
+#header_main ul li a { color: inherit; text-decoration: inherit; cursor: inherit; font-size: 108%; line-height: 55px; text-transform: uppercase; color: #686c72; }
 #header_main ul li a:visited { color: #686c72; }
 #header_main ul li a:focus { color: red; }
-#header_main ul li a:hover { color: #f0c310; }
+#header_main ul li a:hover { color: #ff6666; }
 #header_main ul li a:active { color: #686c72; }
 
 #sub_header { background: url(../images/header.png) no-repeat center; height: 300px; min-width: 900px; }
 #sub_header #blurb { float: left; min-width: 300px; }
-#sub_header #blurb h2 { font-size: 75px; }
+#sub_header #blurb h2 { font-size: 75px; margin: 30px 15px 10px 0; }
 #sub_header #blurb p { padding-bottom: 1em; }
 #sub_header #blurb a { background: url(../images/contact.png) no-repeat; width: 200px; height: 50px; display: block; text-indent: -9999em; }
 #sub_header #blurb a:hover { background-position: 0 -56px; }
@@ -78,6 +78,14 @@ html { color: white; background: url(../images/gray.png); }
 #content { padding-top: 75px; }
 
 .category { float: left; width: 30%; min-width: 280px; padding-right: 1em; padding-left: 1em; padding-bottom: 1em; }
+.category h3 { border-bottom: 1px solid #777; }
+.category p { margin-top: 5px; font-size: 85%; }
+.category a { color: #ff6666; text-decoration: none; }
+.category a:visited { color: #ff6666; }
+.category a:focus { color: red; }
+.category a:hover { color: red; }
+.category a:active { color: #ff6666; }
 .category.first { padding-left: 0px; }
 .category.last { padding-right: 0px; }
 .category img { float: right; padding: 0.5em; }
+.category img.short { margin-top: 8pxX; }

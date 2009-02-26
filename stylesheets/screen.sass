@@ -14,6 +14,7 @@ html
   :color white
   :background url(../images/gray.png)
 body
+  :font-family helvetica, arial, sans
 .container
   +container
 #header_wrapper
@@ -29,11 +30,12 @@ body
     :float right
     +horizontal-list("1em")
     li
-      :padding-top 12px
       a
         +unstyled-link
-        :font-size 20px
-        +link-colors(#686c72, #F0C310, #686c72, #686c72, #FF0000)  
+        :font-size 108%
+        :line-height 55px
+        :text-transform uppercase
+        +link-colors(#686c72, #f66, #686c72, #686c72, #FF0000)  
 #sub_header
   :background url(../images/header.png) no-repeat center
   :height 300px
@@ -43,6 +45,7 @@ body
     :min-width 300px
     h2
       :font-size 75px
+      :margin 30px 15px 10px 0
     p
       :padding-bottom 1em
     a
@@ -64,6 +67,14 @@ body
 #content
   :padding-top 75px
 .category
+  h3
+    :border-bottom 1px solid #777
+  p
+    :margin-top 5px
+    :font-size 85%
+  a
+    +link-colors(#f66, #f00, #f66, #f66, #FF0000)  
+    :text-decoration none
   :float left
   :width 30%
   :min-width 280px
@@ -77,3 +88,5 @@ body
   img
     :float right
     :padding 0.5em
+    &.short
+      :margin-top 8pxX
