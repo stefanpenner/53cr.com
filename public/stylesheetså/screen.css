@@ -47,7 +47,7 @@ html { color: white; background: url(../images/gray.png); }
 
 body { font-family: helvetica, arial, sans; }
 
-.container { margin: 0 auto; min-width: 650px; max-width: 1000px; padding-left: 20px; padding: -right 20px; }
+.container { margin: 0 auto; min-width: 600px; max-width: 1000px; padding-left: 20px; padding: -right 20px; }
 
 #header_wrapper { background: url(../images/orange.png) repeat; }
 
