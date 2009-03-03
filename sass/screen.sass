@@ -19,10 +19,9 @@ body
   +container
 .clearing
   :clear both
-#header_wrapper
+#header
   :width 100%
   :background url(/images/toolbar.png) repeat-x #f8ce4a
-#header
   :height 52px
   img
     :float left
@@ -38,12 +37,10 @@ body
         :line-height 55px
         :text-transform uppercase
         +link-colors(#686c72, #f66, #686c72, #686c72, #FF0000)  
-#blurb_wrapper
+#blurb
   :background url(/images/header.png) no-repeat center #f8ce4a
   :min-width 900px
-#blurb
   :padding-bottom 5px
-  :min-width 300px
   h2
     :font-size 50px
     :margin 0px 0px 0 10px
@@ -60,7 +57,7 @@ body
       :background-position 0 -56px
     &:active
       :background-position 0 -111px
-#content_wrapper
+#content
   :background url(/images/content.png) repeat-x
   :min-height 200px
 .category
@@ -91,8 +88,9 @@ body
 body.home
   #blurb_wrapper
     :height 300px
-  #blurb
     :padding-bottom 0
+  #blurb
+    :height 300px
     h2
       :margin 30px 15px 10px 0
       :font-size 75px

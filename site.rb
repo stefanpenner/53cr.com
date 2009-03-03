@@ -18,6 +18,18 @@ class Site < Sinatra::Base
   get '/work/?' do
     haml :work
   end
+
+  get '/contact/?' do
+    haml :contact
+  end
+
+  post '/contact/?' do
+    "not sent"
+  end
+
+  get '/labs/?' do
+    haml :labs
+  end
   
   get '/secret/?' do
     haml :secret, :locals => { :blurb => 'You win the internet!' }

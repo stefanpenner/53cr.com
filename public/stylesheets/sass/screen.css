@@ -51,9 +51,7 @@ body { font-family: helvetica, arial, sans; }
 
 .clearing { clear: both; }
 
-#header_wrapper { width: 100%; background: url(/images/toolbar.png) repeat-x #f8ce4a; }
-
-#header { height: 52px; }
+#header { width: 100%; background: url(/images/toolbar.png) repeat-x #f8ce4a; height: 52px; }
 #header img { float: left; padding-left: 10px; padding-top: 12px; }
 #header ul { float: right; margin: 0; padding: 0; border: 0; overflow: auto; overflow: -moz-scrollbars-none; display: inline-block; }
 #header ul { display: block; }
@@ -66,16 +64,14 @@ body { font-family: helvetica, arial, sans; }
 #header ul li a:hover { color: #ff6666; }
 #header ul li a:active { color: #686c72; }
 
-#blurb_wrapper { background: url(/images/header.png) no-repeat center #f8ce4a; min-width: 900px; }
-
-#blurb { padding-bottom: 5px; min-width: 300px; }
+#blurb { background: url(/images/header.png) no-repeat center #f8ce4a; min-width: 900px; padding-bottom: 5px; }
 #blurb h2 { font-size: 50px; margin: 0px 0px 0 10px; line-height: 0.9em; }
 #blurb p { padding-bottom: 1em; }
 #blurb a { background: url(/images/contact.png) no-repeat; width: 200px; height: 50px; display: block; text-indent: -9999em; }
 #blurb a:hover { background-position: 0 -56px; }
 #blurb a:active { background-position: 0 -111px; }
 
-#content_wrapper { background: url(/images/content.png) repeat-x; min-height: 200px; }
+#content { background: url(/images/content.png) repeat-x; min-height: 200px; }
 
 .category { float: left; width: 30%; min-width: 280px; padding-right: 1em; padding-left: 1em; padding-bottom: 1em; }
 .category h3 { border-bottom: 1px solid #777; }
@@ -90,8 +86,8 @@ body { font-family: helvetica, arial, sans; }
 .category img { float: right; padding: 0.5em; }
 .category img.short { margin-top: 8px; }
 
-body.home #blurb_wrapper { height: 300px; }
-body.home #blurb { padding-bottom: 0; }
+body.home #blurb_wrapper { height: 300px; padding-bottom: 0; }
+body.home #blurb { height: 300px; }
 body.home #blurb h2 { margin: 30px 15px 10px 0; font-size: 75px; line-height: 1.1em; }
 body.home #blurb #preview { float: left; min-width: 300px; }
 body.home #blurb #blurb_text { float: left; }
