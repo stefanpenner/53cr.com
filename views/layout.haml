@@ -1,4 +1,4 @@
-!!!
+!!!Strict
 %html
   %head
     %title
@@ -11,7 +11,15 @@
     Cufon.replace('h2');
     Cufon.replace('h3');
     </script>
-  %body
+  %body{ :class => (body_class rescue nil) }
+    #header_wrapper
+      #header.container
+        = link_to "<img src='/images/chromium.png' alt='Chromium 53'/>", '/'
+        %ul
+          %li.first= link_to 'Home',     '/'
+          %li=       link_to 'Our Work', '/work' 
+          %li=       link_to 'Labs',     '/labs'
+          %li=       link_to 'Blog',     '/blog'
+          %li.last=  link_to 'Contact',  '/contact'
     = yield
-
-
+    %script{ :src => "http://static.getclicky.com/72588.js", :type => "text/javascript" }

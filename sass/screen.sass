@@ -17,11 +17,13 @@ body
   :font-family helvetica, arial, sans
 .container
   +container
+.clearing
+  :clear both
 #header_wrapper
-  :background #f8ce4a
-#header_main
-  :height 60px
-  :background url(/images/toolbar.png) repeat-x
+  :width 100%
+  :background url(/images/toolbar.png) repeat-x #f8ce4a
+#header
+  :height 52px
   img
     :float left
     :padding-left 10px
@@ -36,36 +38,31 @@ body
         :line-height 55px
         :text-transform uppercase
         +link-colors(#686c72, #f66, #686c72, #686c72, #FF0000)  
-#sub_header
-  :background url(/images/header.png) no-repeat center
-  :height 300px
+#blurb_wrapper
+  :background url(/images/header.png) no-repeat center #f8ce4a
   :min-width 900px
-  #blurb
-    :float left
-    :min-width 300px
-    h2
-      :font-size 75px
-      :margin 30px 15px 10px 0
-    p
-      :padding-bottom 1em
-    a
-      :background url(/images/contact.png) no-repeat
-      :width 200px
-      :height 50px
-      :display block
-      :text-indent -9999em      
-      &:hover
-        :background-position 0 -56px
-      &:active
-        :background-position 0 -111px
-  #preview
-    :float left
-    :min-width 300px
+#blurb
+  :padding-bottom 5px
+  :min-width 300px
+  h2
+    :font-size 50px
+    :margin 0px 0px 0 10px
+    :line-height 0.9em
+  p
+    :padding-bottom 1em
+  a
+    :background url(/images/contact.png) no-repeat
+    :width 200px
+    :height 50px
+    :display block
+    :text-indent -9999em      
+    &:hover
+      :background-position 0 -56px
+    &:active
+      :background-position 0 -111px
 #content_wrapper
   :background url(/images/content.png) repeat-x
   :min-height 200px
-#content
-  :padding-top 75px
 .category
   h3
     :border-bottom 1px solid #777
@@ -91,10 +88,18 @@ body
     &.short
       :margin-top 8px
 
-body.blog
-  #sub_header
-    :height 62px
-    #blurb h2
-      :font-size 50px
-      :margin 0px 0px 0px 10px
-      :line-height 0.9em
+body.home
+  #blurb_wrapper
+    :height 300px
+  #blurb
+    :padding-bottom 0
+    h2
+      :margin 30px 15px 10px 0
+      :font-size 75px
+      :line-height 1.1em
+    #preview
+      :float left
+      :min-width 300px
+    #blurb_text
+      :float left
+  
