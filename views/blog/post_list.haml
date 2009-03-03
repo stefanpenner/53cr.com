@@ -1,0 +1,10 @@
+#blurb.wrapper
+  .container
+    %h2 Post List
+
+#content.wrapper
+  .container
+    - posts.each do |post|
+      %h3= blog_link post.title, "/#{post.year}/#{post.month}/#{post.slug}"
+      %h6== Posted #{post.formatted_date} by #{post.author}
+      %hr/

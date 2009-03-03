@@ -86,8 +86,7 @@ body { font-family: helvetica, arial, sans; }
 .category img { float: right; padding: 0.5em; }
 .category img.short { margin-top: 8px; }
 
-body.home #blurb_wrapper { height: 300px; padding-bottom: 0; }
-body.home #blurb { height: 300px; }
+body.home #blurb { padding-bottom: 0; height: 300px; }
 body.home #blurb h2 { margin: 30px 15px 10px 0; font-size: 75px; line-height: 1.1em; }
 body.home #blurb #preview { float: left; min-width: 300px; }
 body.home #blurb #blurb_text { float: left; }

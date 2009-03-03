@@ -1,0 +1,8 @@
+#blurb.wrapper
+  .container
+    %h2= blog_link post.title, "/#{post.year}/#{post.month}/#{post.slug}"
+
+#content.wrapper
+  .container
+    %h6== Posted #{post.formatted_date} by #{post.author}
+    .content= find_and_preserve(post.content)
