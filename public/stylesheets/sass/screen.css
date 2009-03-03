@@ -88,4 +88,7 @@ body { font-family: helvetica, arial, sans; }
 .category.first { padding-left: 0px; }
 .category.last { padding-right: 0px; }
 .category img { float: right; padding: 0.5em; }
-.category img.short { margin-top: 8pxX; }
+.category img.short { margin-top: 8px; }
+
+body.blog #sub_header { height: 62px; }
+body.blog #sub_header #blurb h2 { font-size: 50px; margin: 0px 0px 0px 10px; line-height: 0.9em; }
